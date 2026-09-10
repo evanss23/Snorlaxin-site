@@ -110,10 +110,10 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease }}
-            className="absolute inset-x-8 bottom-6 top-10 -z-10 rounded-[3rem] bg-gradient-to-br from-snorlax-100 via-cream-200 to-snorlax-200 dark:from-snorlax-800 dark:via-snorlax-900 dark:to-snorlax-700"
+            className="absolute inset-x-4 bottom-2 top-16 -z-10 rounded-[3rem] bg-gradient-to-br from-snorlax-100 via-cream-200 to-snorlax-200 dark:from-snorlax-800 dark:via-snorlax-900 dark:to-snorlax-700"
           />
           <div className="animate-float">
-            <Mascot className="px-4 pt-6" />
+            <Mascot className="px-6 pt-10 sm:px-10" priority />
           </div>
         </div>
       </div>

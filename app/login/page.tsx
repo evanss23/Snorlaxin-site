@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LoginForm } from "@/components/LoginForm";
-import { MascotMark } from "@/components/Mascot";
+import { Mascot, MascotMark } from "@/components/Mascot";
 import { PageEnter } from "@/components/motion";
 
 export const metadata: Metadata = { title: "Team login" };
@@ -8,8 +8,12 @@ export const metadata: Metadata = { title: "Team login" };
 export default async function LoginPage({ searchParams }: { searchParams: Promise<{ next?: string }> }) {
   const { next } = await searchParams;
   return (
-    <PageEnter className="container-x flex min-h-[70vh] items-center justify-center py-12">
-      <div className="card w-full max-w-md p-8 sm:p-10">
+    <PageEnter className="container-x grid min-h-[70vh] items-center gap-10 py-12 lg:grid-cols-2">
+      <div className="hidden lg:block">
+        <Mascot variant="laptop" className="mx-auto max-w-lg" />
+        <p className="mt-6 text-center font-display text-2xl font-semibold text-muted">Someone has to run the shop.</p>
+      </div>
+      <div className="card w-full max-w-md p-8 sm:p-10 lg:justify-self-center">
         <div className="flex items-center gap-3">
           <MascotMark className="h-12 w-12" />
           <div>

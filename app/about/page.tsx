@@ -32,7 +32,7 @@ export default function AboutPage() {
           </div>
         </div>
         <Reveal>
-          <Mascot className="mx-auto max-w-md" />
+          <Mascot variant="laptop" className="mx-auto max-w-md" />
         </Reveal>
       </div>
 

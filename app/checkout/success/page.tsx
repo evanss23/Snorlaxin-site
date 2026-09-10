@@ -17,7 +17,7 @@ export default async function SuccessPage({ searchParams }: { searchParams: Prom
   return (
     <PageEnter className="container-x py-10 md:py-16">
       <div className="card mx-auto max-w-3xl overflow-hidden p-8 text-center sm:p-12">
-        <Mascot className="mx-auto max-w-xs" />
+        <Mascot className="mx-auto max-w-[18rem]" />
         <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-snorlax-500 dark:text-snorlax-300">Order #{order.id}</p>
         <h1 className="mt-2 text-4xl font-bold sm:text-5xl">Thank you, {order.customer_name.split(" ")[0]}!</h1>
         <p className="mx-auto mt-4 max-w-md text-muted">
